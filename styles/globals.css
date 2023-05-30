@@ -79,38 +79,3 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
-
-
-.link-underline {
-  position: relative;
-}
-
-.link-underline:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  background: linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
-  transition: width 0.25s ease;
-  -webkit-transition: width 0.25s ease;
-}
-
-.link-underline:hover:after {
-  width: 100%;
-  left: 0;
-  background: linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
-}
-
-.progress-bar {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: #de1d8d;
-  transform-origin: 0%;
-}
